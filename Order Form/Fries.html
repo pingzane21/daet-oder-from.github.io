@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fries Order</title>
+    <style type="text/css">
+    
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <!--SURNAME, FIRSTNAME-->
+    <!--DATE-->
+    <h1>Fries</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="text" name="address" placeholder="Complete Address" required>
+            <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9]{11}" required>
+            <textarea name="directions" placeholder="Directions" rows="4" required></textarea>
+            <input type="datetime-local" name="datetime" required>
+        </fieldset>
+
+        <fieldset>
+            <label>Fries:</label><br>
+                <select name="fries_size">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <select name="fries_flavor">
+                    <option value="bbq">BBQ</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="sour_cream">Sour Cream</option>
+                </select>
+                <input type="number" name="fries_quantity" placeholder="Quantity" min="1" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Delivery</legend>
+            <label><input type="radio" name="delivery_method" value="delivery" required> Delivery</label><br>
+            <label><input type="radio" name="delivery_method" value="pickup" required> Pickup</label>
+        </fieldset>
+
+        <div class="buttons">
+            <a href="selection.html" class="back">Back</a>
+            <a href="out.html" class="back">Submit Form</a>
+            <button type="reset">Clear Form</button>
+        </div>
+        
+    </form>
+
+
+
+
+</body>
+</html>

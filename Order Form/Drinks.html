@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Drinks Order</title>
+    <style type="text/css">
+    
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <!--SURNAME, FIRSTNAME-->
+    <!--DATE-->
+    <h1>Drinks</h1>
+    <form action="#" method="post">
+    <fieldset>
+        <legend>Customer Information</legend>
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="text" name="address" placeholder="Complete Address" required>
+        <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9]{11}" required>
+        <textarea name="directions" placeholder="Directions" rows="4" required></textarea>
+        <input type="datetime-local" name="datetime" required>
+    </fieldset>
+
+    <fieldset>
+         <label>Drinks:</label><br>
+         <select name="Drinks">
+            <option value="carbonara">Coke</option>
+            <option value="pesto">Sprite</option>
+            <option value="pesto">Water</option>
+            <option value="pesto">Iced tea</option>
+          
+        </select>
+        <select name="Size">
+            <option value="carbonara">Small</option>
+            <option value="pesto">Medium</option>
+            <option value="pesto">Large</option>       
+        </select>
+                <input type="number" name="drink_quantity" placeholder="Quantity" min="1" required>
+    </fieldset>
+    <fieldset>
+        <legend>Delivery</legend>
+        <label><input type="radio" name="delivery_method" value="delivery" required> Delivery</label><br>
+        <label><input type="radio" name="delivery_method" value="pickup" required> Pickup</label>
+    </fieldset>
+
+    <div class="buttons">
+        <a href="selection.html" class="back">Back</a>
+        <a href="out.html" class="back">Submit Form</a>
+        <button type="reset">Clear Form</button>
+    </div>
+   </form>
+
+
+
+</body>
+</html>

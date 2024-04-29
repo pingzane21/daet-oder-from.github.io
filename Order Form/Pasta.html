@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pasta Order</title>
+    <style type="text/css">
+    
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <!--SURNAME, FIRSTNAME-->
+    <!--DATE-->
+    <h1>Pasta</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="text" name="address" placeholder="Complete Address" required>
+            <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9]{11}" required>
+            <textarea name="directions" placeholder="Directions" rows="4" required></textarea>
+            <input type="datetime-local" name="datetime" required>
+        </fieldset>
+        <fieldset>
+        <label>Pasta:</label><br>
+
+                <select name="sauce">
+                    <option value="carbonara">Carbonara</option>
+                    <option value="pesto">Pesto</option>
+                    <option value="pesto">Spaghetti</option>
+                  
+                </select>
+                <select name="Addons">
+                    <option value="carbonara">Extra cheese</option>
+                    <option value="carbonara">Extra sauce</option>
+                    <option value="carbonara">Extra salt</option>
+                    <option value="carbonara">Extra zest</option>
+                    
+                </select>
+                <input type="number" name="pasta_quantity" placeholder="Quantity" min="1" required><br>
+        </fieldset>
+    <fieldset>
+        <legend>Delivery</legend>
+        <label><input type="radio" name="delivery_method" value="delivery" required> Delivery</label><br>
+        <label><input type="radio" name="delivery_method" value="pickup" required> Pickup</label>
+    </fieldset>
+
+    <div class="buttons">
+        <a href="selection.html" class="back">Back</a>
+        <a href="out.html" class="back">Submit Form</a>
+        <button type="reset">Clear Form</button>
+    </div>
+</form>
+
+
+
+</body>
+</html>

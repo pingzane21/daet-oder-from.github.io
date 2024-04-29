@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Burger Order</title>
+    <style type="text/css">
+    
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <!--SURNAME, FIRSTNAME-->
+    <!--DATE-->
+    <h1>Burgers</h1>
+    <form action="#" method="post">
+    <fieldset>
+        <legend>Customer Information</legend>
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="text" name="address" placeholder="Complete Address" required>
+        <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9]{11}" required>
+
+        <textarea name="directions" placeholder="Directions" rows="4" required></textarea>
+        <input type="datetime-local" name="datetime" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Order</legend>
+        <label>Burgers:</label><br>
+        <input type="checkbox" name="burger[]" value="single_patty"> Single Patty<br>
+        <input type="checkbox" name="burger[]" value="double_patty"> Double Patty<br>
+    
+        <select name="bun">
+            <option value="white_bun">White Bun</option>
+            <option value="wheat_bun">Wheat Bun</option>
+            <option value="wheat_bun">Honey oat</option>
+            <option value="wheat_bun">Sugar-free</option>
+            
+        </select>
+        <input type="number" name="burger_quantity" placeholder="Quantity" min="1" required><br>
+        <fieldset>
+            <legend>Delivery</legend>
+            <label><input type="radio" name="delivery_method" value="delivery" required> Delivery</label><br>
+            <label><input type="radio" name="delivery_method" value="pickup" required> Pickup</label>
+        </fieldset>
+
+        <div class="buttons">
+            <a href="selection.html" class="back">Back</a>
+            <a href="out.html" class="back">Submit Form</a>
+            <button type="reset">Clear Form</button>
+        </div>
+    </form>
+
+
+</body>
+</html>
